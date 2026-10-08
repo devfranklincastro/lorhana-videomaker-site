@@ -1,0 +1,1198 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lorhana Videomaker | Vídeos para empresas em Parauapebas</title>
+    <meta
+      name="description"
+      content="Vídeos para o seu negócio, do planejamento à publicação. Planos mensais para empresas de Parauapebas, com produção, edição e publicação de conteúdo feito para vender mais."
+    />
+    <meta property="og:title" content="Lorhana Videomaker | Vídeos para empresas em Parauapebas" />
+    <meta
+      property="og:description"
+      content="Sua empresa tem qualidade. Seus vídeos também precisam ter. Planos mensais de produção de vídeos para empresas em Parauapebas."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="snapinsta-1791483962839.jpg" />
+    <meta property="og:image:alt" content="Lorhana segurando celular com estabilizador" />
+    <meta property="og:locale" content="pt_BR" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Lorhana Videomaker | Vídeos para empresas em Parauapebas" />
+    <meta
+      name="twitter:description"
+      content="Sua empresa tem qualidade. Seus vídeos também precisam ter."
+    />
+    <style>
+      :root {
+        --bg: #1e1c1f;
+        --bg-soft: #262329;
+        --surface: #232025;
+        --surface-strong: #2a272d;
+        --text: #f3f2f4;
+        --muted: #d0c9d3;
+        --lilac: #c39bf0;
+        --lilac-strong: #c390f3;
+        --lilac-contrast: #1a121b;
+        --border: rgba(255, 255, 255, 0.12);
+        --success: #a8f0c8;
+        --danger: #ffb7b7;
+        --shadow: 0 18px 42px rgba(0, 0, 0, 0.28);
+        --radius: 20px;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      html {
+        scroll-behavior: smooth;
+      }
+
+      body {
+        margin: 0;
+        font-family: Inter, "Segoe UI", Arial, sans-serif;
+        background: var(--bg);
+        color: var(--text);
+        line-height: 1.55;
+      }
+
+      img,
+      video {
+        max-width: 100%;
+        display: block;
+      }
+
+      a {
+        color: inherit;
+        text-decoration: none;
+      }
+
+      button,
+      input,
+      select {
+        font: inherit;
+      }
+
+      :focus-visible {
+        outline: 3px solid rgba(195, 155, 240, 0.95);
+        outline-offset: 3px;
+      }
+
+      .page-shell {
+        width: min(100%, 430px);
+        margin: 0 auto;
+        background: var(--bg);
+        min-height: 100vh;
+        padding-bottom: 88px;
+      }
+
+      .content {
+        padding: 0 18px 32px;
+      }
+
+      .topbar {
+        padding: 22px 18px 8px;
+      }
+
+      .brand-badge {
+        display: inline-flex;
+        padding: 7px 12px;
+        border: 1px solid rgba(195, 155, 240, 0.4);
+        border-radius: 999px;
+        background: rgba(195, 155, 240, 0.08);
+        color: var(--lilac);
+        font-size: 0.75rem;
+        font-weight: 700;
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
+      }
+
+      .hero {
+        padding: 8px 18px 18px;
+      }
+
+      .hero h1 {
+        margin: 14px 0 12px;
+        font-family: "Arial Black", "Segoe UI", sans-serif;
+        letter-spacing: -0.04em;
+        line-height: 1.02;
+        font-size: clamp(2.2rem, 7vw, 3.4rem);
+      }
+
+      .hero h1 strong {
+        color: var(--lilac);
+      }
+
+      .lead {
+        margin: 0 0 20px;
+        font-size: 1.03rem;
+        color: var(--muted);
+        max-width: 28ch;
+      }
+
+      .cta-primary,
+      .cta-footer {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        padding: 16px 18px;
+        border: none;
+        border-radius: 999px;
+        background: var(--lilac);
+        color: var(--bg);
+        font-weight: 800;
+        font-size: 1rem;
+        box-shadow: 0 10px 24px rgba(195, 155, 240, 0.28);
+        cursor: pointer;
+        transition: transform 0.2s ease, box-shadow 0.2s ease;
+      }
+
+      .cta-primary:hover,
+      .cta-primary:focus-visible,
+      .cta-footer:hover,
+      .cta-footer:focus-visible {
+        transform: translateY(-1px);
+        box-shadow: 0 14px 28px rgba(195, 155, 240, 0.35);
+      }
+
+      .hero-visual {
+        margin-top: 26px;
+        border-radius: 24px;
+        overflow: hidden;
+        background: linear-gradient(180deg, rgba(255, 255, 255, 0.05), rgba(255, 255, 255, 0.02));
+        border: 1px solid var(--border);
+      }
+
+      .hero-visual img {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+        aspect-ratio: 1 / 1.15;
+      }
+
+      .section {
+        padding: 28px 0 0;
+      }
+
+      .section-title {
+        margin: 0 0 18px;
+        font-size: 1.55rem;
+        line-height: 1.1;
+        font-family: "Arial Black", "Segoe UI", sans-serif;
+        letter-spacing: -0.04em;
+      }
+
+      .problem-grid,
+      .audience-grid {
+        display: grid;
+        gap: 12px;
+      }
+
+      .problem-card,
+      .audience-card,
+      .faq-item,
+      .about-card,
+      .survey-card {
+        background: rgba(255, 255, 255, 0.02);
+        border: 1px solid var(--border);
+        border-radius: var(--radius);
+        padding: 18px;
+      }
+
+      .problem-card {
+        display: flex;
+        gap: 12px;
+        align-items: flex-start;
+      }
+
+      .problem-icon {
+        width: 34px;
+        height: 34px;
+        border-radius: 12px;
+        background: rgba(195, 155, 240, 0.12);
+        color: var(--lilac);
+        display: grid;
+        place-items: center;
+        font-weight: 800;
+        flex-shrink: 0;
+      }
+
+      .problem-card h3 {
+        margin: 0 0 4px;
+        font-size: 1rem;
+      }
+
+      .problem-card p {
+        margin: 0;
+        color: var(--muted);
+        font-size: 0.94rem;
+      }
+
+      .demo-grid {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 12px;
+      }
+
+      .demo-card {
+        background: rgba(255, 255, 255, 0.02);
+        border: 1px solid var(--border);
+        border-radius: 18px;
+        padding: 10px 10px 12px;
+        overflow: hidden;
+      }
+
+      .video-shell {
+        position: relative;
+        border-radius: 14px;
+        overflow: hidden;
+        background: #111;
+        aspect-ratio: 9 / 16;
+        cursor: pointer;
+      }
+
+      .video-shell video {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        background: #0f0f0f;
+      }
+
+      .video-shell .play-cover {
+        position: absolute;
+        inset: 0;
+        display: grid;
+        place-items: center;
+        background: linear-gradient(180deg, rgba(0, 0, 0, 0.08), rgba(0, 0, 0, 0.52));
+        pointer-events: none;
+      }
+
+      .video-shell .play-button {
+        width: 52px;
+        height: 52px;
+        border-radius: 50%;
+        display: grid;
+        place-items: center;
+        border: 2px solid rgba(255, 255, 255, 0.8);
+        background: rgba(17, 17, 17, 0.38);
+        color: #fff;
+        font-size: 1.5rem;
+        backdrop-filter: blur(2px);
+        pointer-events: auto;
+        cursor: pointer;
+      }
+
+      .demo-card p {
+        margin: 10px 0 0;
+        font-size: 0.75rem;
+        color: var(--muted);
+        line-height: 1.35;
+        text-align: center;
+      }
+
+      .steps {
+        display: grid;
+        gap: 12px;
+        list-style: none;
+        padding: 0;
+        margin: 0;
+      }
+
+      .steps li {
+        display: grid;
+        grid-template-columns: 36px 1fr;
+        gap: 12px;
+        align-items: flex-start;
+        background: rgba(255, 255, 255, 0.02);
+        border: 1px solid var(--border);
+        border-radius: 16px;
+        padding: 12px 14px;
+      }
+
+      .step-number {
+        width: 36px;
+        height: 36px;
+        border-radius: 50%;
+        display: grid;
+        place-items: center;
+        background: var(--lilac);
+        color: var(--bg);
+        font-weight: 800;
+      }
+
+      .steps p {
+        margin: 0;
+        color: var(--muted);
+      }
+
+      .audience-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .audience-card h3 {
+        margin: 0 0 12px;
+        font-size: 1rem;
+      }
+
+      .audience-card ul {
+        margin: 0;
+        padding-left: 18px;
+        color: var(--muted);
+      }
+
+      .audience-card li + li {
+        margin-top: 8px;
+      }
+
+      .about-card p {
+        margin: 0;
+        color: var(--muted);
+      }
+
+      .qualify {
+        padding-top: 30px;
+      }
+
+      .modal-overlay {
+        position: fixed;
+        inset: 0;
+        background: rgba(10, 10, 12, 0.72);
+        backdrop-filter: blur(8px);
+        display: none;
+        align-items: center;
+        justify-content: center;
+        padding: 20px;
+        z-index: 100;
+      }
+
+      .modal-overlay.visible {
+        display: flex;
+      }
+
+      .modal-panel {
+        position: relative;
+        width: min(100%, 430px);
+        max-height: 88vh;
+        overflow: auto;
+        background: var(--bg);
+        border: 1px solid var(--border);
+        border-radius: 26px;
+        box-shadow: var(--shadow);
+      }
+
+      .modal-close {
+        position: absolute;
+        right: 12px;
+        top: 12px;
+        width: 36px;
+        height: 36px;
+        border: 1px solid var(--border);
+        border-radius: 50%;
+        background: rgba(255, 255, 255, 0.02);
+        color: var(--text);
+        font-size: 1.5rem;
+        line-height: 1;
+        cursor: pointer;
+        z-index: 2;
+      }
+
+      .survey-card {
+        padding: 18px 16px;
+      }
+
+      .survey-progress {
+        width: 100%;
+        height: 8px;
+        border-radius: 999px;
+        background: rgba(255, 255, 255, 0.08);
+        margin-bottom: 18px;
+        overflow: hidden;
+      }
+
+      .survey-progress-bar {
+        width: 20%;
+        height: 100%;
+        border-radius: inherit;
+        background: linear-gradient(90deg, var(--lilac), #e5d0ff);
+        transition: width 0.25s ease;
+      }
+
+      .survey-step {
+        display: none;
+      }
+
+      .survey-step.active {
+        display: block;
+      }
+
+      .survey-step h3 {
+        margin: 0 0 14px;
+        font-size: 1.25rem;
+      }
+
+      .field {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+      }
+
+      .field label {
+        font-weight: 700;
+        color: var(--text);
+      }
+
+      .field input,
+      .field select {
+        width: 100%;
+        border: 1px solid var(--border);
+        background: rgba(255, 255, 255, 0.02);
+        color: var(--text);
+        border-radius: 12px;
+        padding: 14px 14px;
+      }
+
+      .choice-grid {
+        display: grid;
+        gap: 10px;
+      }
+
+      .choice {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        padding: 12px 14px;
+        border: 1px solid var(--border);
+        border-radius: 12px;
+        background: rgba(255, 255, 255, 0.02);
+        color: var(--text);
+        cursor: pointer;
+      }
+
+      .choice input {
+        accent-color: var(--lilac);
+        width: 18px;
+        height: 18px;
+      }
+
+      .survey-actions {
+        display: flex;
+        gap: 10px;
+        margin-top: 18px;
+      }
+
+      .survey-actions > button {
+        flex: 1;
+      }
+
+      .secondary-button,
+      .ghost-button {
+        border: 1px solid var(--border);
+        border-radius: 12px;
+        padding: 13px 16px;
+        background: transparent;
+        color: var(--text);
+        cursor: pointer;
+      }
+
+      .secondary-button {
+        background: var(--lilac);
+        color: var(--bg);
+        border-color: transparent;
+        font-weight: 800;
+      }
+
+      .confirmation {
+        display: none;
+        background: rgba(255, 255, 255, 0.02);
+        border: 1px solid var(--border);
+        border-radius: var(--radius);
+        padding: 20px 18px;
+      }
+
+      .confirmation.visible {
+        display: block;
+      }
+
+      .confirmation h3 {
+        margin: 0 0 10px;
+        font-size: 1.4rem;
+      }
+
+      .confirmation p {
+        margin: 0 0 16px;
+        color: var(--muted);
+      }
+
+      .confirmation .info-chip {
+        display: inline-block;
+        background: rgba(195, 155, 240, 0.12);
+        border: 1px solid rgba(195, 155, 240, 0.45);
+        border-radius: 999px;
+        color: var(--lilac);
+        padding: 6px 10px;
+        font-size: 0.75rem;
+        font-weight: 700;
+        margin-bottom: 14px;
+      }
+
+      .faq-list {
+        display: grid;
+        gap: 12px;
+      }
+
+      .faq-item {
+        padding: 14px 16px;
+      }
+
+      .faq-item h3 {
+        margin: 0 0 8px;
+        font-size: 1rem;
+      }
+
+      .faq-item p {
+        margin: 0;
+        color: var(--muted);
+      }
+
+      .footer-cta {
+        position: fixed;
+        left: 50%;
+        bottom: 16px;
+        transform: translateX(-50%);
+        width: calc(100% - 28px);
+        max-width: 390px;
+        z-index: 30;
+        text-align: center;
+        transition: opacity 0.2s ease, transform 0.2s ease, visibility 0.2s ease;
+        opacity: 0;
+        visibility: hidden;
+        pointer-events: none;
+        transform: translateX(-50%) translateY(12px);
+      }
+
+      .footer-cta.is-visible {
+        opacity: 1;
+        visibility: visible;
+        pointer-events: auto;
+        transform: translateX(-50%);
+      }
+
+      body.modal-open .footer-cta {
+        opacity: 0;
+        visibility: hidden;
+        pointer-events: none;
+        transform: translateX(-50%) translateY(12px);
+      }
+
+      .footer-meta {
+        text-align: center;
+        padding: 28px 16px 22px;
+        color: var(--muted);
+        font-size: 0.86rem;
+      }
+
+      .hidden {
+        display: none !important;
+      }
+
+      @media (min-width: 768px) {
+        .page-shell {
+          width: min(100%, 1100px);
+          padding-bottom: 36px;
+        }
+
+        .hero {
+          display: grid;
+          grid-template-columns: 1.05fr 0.95fr;
+          align-items: center;
+          gap: 24px;
+          padding-top: 18px;
+        }
+
+        .hero-copy {
+          padding-right: 10px;
+        }
+
+        .hero-visual {
+          margin-top: 0;
+        }
+
+        .content {
+          padding: 0 28px 28px;
+        }
+
+        .problem-grid {
+          grid-template-columns: repeat(3, 1fr);
+        }
+
+        .audience-grid {
+          grid-template-columns: repeat(2, minmax(0, 1fr));
+        }
+
+        .demo-grid {
+          grid-template-columns: repeat(3, minmax(0, 1fr));
+        }
+
+        .faq-list {
+          grid-template-columns: repeat(2, minmax(0, 1fr));
+        }
+
+        .footer-cta {
+          display: none;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="page-shell">
+      <header class="topbar">
+        <div class="brand-badge">Empresas de Parauapebas</div>
+      </header>
+
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="hero-copy">
+          <h1 id="hero-title">Sua empresa tem qualidade. <strong>Seus vídeos também precisam ter.</strong></h1>
+          <p class="lead">Vídeos para o seu negócio, do planejamento à publicação — com conteúdo que comunica valor e reforça a percepção de alto padrão.</p>
+          <a class="cta-primary" href="#qualificacao">Quero conhecer os planos</a>
+        </div>
+
+        <div class="hero-visual">
+          <img
+            src="snapinsta-1791483962839.jpg"
+            alt="Lorhana segurando celular com estabilizador"
+            width="900"
+            height="1050"
+            loading="eager"
+          />
+        </div>
+      </section>
+
+      <main class="content">
+        <section class="section" aria-labelledby="problem-title">
+          <h2 id="problem-title" class="section-title">O problema</h2>
+          <div class="problem-grid">
+            <article class="problem-card">
+              <div class="problem-icon">1</div>
+              <div>
+                <h3>Falta de tempo</h3>
+                <p>Você precisa focar no negócio e não tem como organizar vídeos, gravação e rotina de publicação.</p>
+              </div>
+            </article>
+            <article class="problem-card">
+              <div class="problem-icon">2</div>
+              <div>
+                <h3>Vergonha da câmera</h3>
+                <p>Nem todo dono de empresa quer aparecer sozinho, e o vídeo precisa ficar natural, sem tensão.</p>
+              </div>
+            </article>
+            <article class="problem-card">
+              <div class="problem-icon">3</div>
+              <div>
+                <h3>Perfil parado</h3>
+                <p>Se o Instagram não evolui, as pessoas não reconhecem a marca e o conteúdo fica sem força.</p>
+              </div>
+            </article>
+          </div>
+        </section>
+
+        <section class="section" aria-labelledby="demos-title">
+          <h2 id="demos-title" class="section-title">Vídeos de demonstração</h2>
+          <div class="demo-grid">
+            <article class="demo-card">
+              <div class="video-shell">
+                <video
+                  class="demo-video"
+                  poster="snapinsta-1791483995226.jpg"
+                  preload="none"
+                  playsinline
+                  muted
+                  controlslist="nodownload noplaybackrate"
+                  data-src="snapinsta-1791491162245.mp4"
+                  aria-label="Vídeo de demonstração para imóveis e empresas de alto padrão"
+                ></video>
+                <div class="play-cover" aria-hidden="true">
+                  <span class="play-button">▶</span>
+                </div>
+              </div>
+              <p>Imobiliária de alto padrão</p>
+            </article>
+            <article class="demo-card">
+              <div class="video-shell">
+                <video
+                  class="demo-video"
+                  poster="snapinsta-1791483962839.jpg"
+                  preload="none"
+                  playsinline
+                  muted
+                  controlslist="nodownload noplaybackrate"
+                  data-src="snapinsta-1791481544044.mp4"
+                  aria-label="Vídeo de bastidores de uma hamburgueria"
+                ></video>
+                <div class="play-cover" aria-hidden="true">
+                  <span class="play-button">▶</span>
+                </div>
+              </div>
+              <p>Hamburgueria / bastidores</p>
+            </article>
+            <article class="demo-card">
+              <div class="video-shell">
+                <video
+                  class="demo-video"
+                  poster="snapinsta-1791483995226.jpg"
+                  preload="none"
+                  playsinline
+                  muted
+                  controlslist="nodownload noplaybackrate"
+                  data-src="snapinsta-1791481663580.mp4"
+                  aria-label="Vídeo de promoções de supermercado"
+                ></video>
+                <div class="play-cover" aria-hidden="true">
+                  <span class="play-button">▶</span>
+                </div>
+              </div>
+              <p>Supermercado / promoções</p>
+            </article>
+          </div>
+        </section>
+
+        <section class="section" aria-labelledby="process-title">
+          <h2 id="process-title" class="section-title">Como funciona</h2>
+          <ol class="steps">
+            <li>
+              <span class="step-number">1</span>
+              <p>Eu entendo seu negócio, público e o que você quer mostrar.</p>
+            </li>
+            <li>
+              <span class="step-number">2</span>
+              <p>Defino os temas e a direção de conteúdo com foco no seu segmento.</p>
+            </li>
+            <li>
+              <span class="step-number">3</span>
+              <p>Organizo o cronograma e a rotina de gravações para ficar simples.</p>
+            </li>
+            <li>
+              <span class="step-number">4</span>
+              <p>Gravo com orientação prática para você aparecer com conforto.</p>
+            </li>
+            <li>
+              <span class="step-number">5</span>
+              <p>Edite os vídeos com boa estrutura, ritmo e qualidade visual.</p>
+            </li>
+            <li>
+              <span class="step-number">6</span>
+              <p>Eu entrego pronto para publicar e te ajudo na organização da presença online.</p>
+            </li>
+          </ol>
+        </section>
+
+        <section class="section" aria-labelledby="audience-title">
+          <h2 id="audience-title" class="section-title">Para quem é e para quem não é</h2>
+          <div class="audience-grid">
+            <article class="audience-card">
+              <h3>Para quem é</h3>
+              <ul>
+                <li>Empresas que querem manter presença constante nas redes.</li>
+                <li>Negócios que precisam de vídeos mais profissionais e consistentes.</li>
+                <li>Planos mensais para conteúdo recorrente, não por projeto avulso.</li>
+              </ul>
+            </article>
+            <article class="audience-card">
+              <h3>Para quem não é</h3>
+              <ul>
+                <li>Quem busca um vídeo único, barato e sem continuidade.</li>
+                <li>Quem quer apenas um “vídeo de anúncio” sem planejamento.</li>
+                <li>Quem não precisa de presença regular e conteúdo mensal.</li>
+              </ul>
+            </article>
+          </div>
+        </section>
+
+        <section class="section" aria-labelledby="about-title">
+          <h2 id="about-title" class="section-title">Sobre a Lorhana</h2>
+          <div class="about-card">
+            <p>Eu cuido de tudo: planejamento de conteúdo, roteiro, gravação, direção para você se sentir à vontade diante da câmera, edição e organização para que o seu negócio fique com presença consistente nas redes sociais. O foco é criar vídeos que ajudem sua empresa a transmitir confiança, clareza e valor para quem já está trabalhando com você ou está prestes a conhecer seu serviço.</p>
+          </div>
+        </section>
+
+        <div class="modal-overlay" id="qualifyModal" aria-hidden="false">
+          <div class="modal-panel" role="dialog" aria-modal="true" aria-labelledby="qualify-title">
+            <button class="modal-close" type="button" aria-label="Fechar questionário">×</button>
+            <div class="survey-card">
+              <div class="survey-progress" aria-hidden="true">
+                <div class="survey-progress-bar" id="progressBar"></div>
+              </div>
+
+              <div class="survey-step active" data-step="0">
+                <h3 id="qualify-title">Questionário rápido</h3>
+                <p class="survey-intro">Responda algumas perguntas para entendermos melhor sua empresa.</p>
+                <div class="field">
+                  <label for="nome">Nome</label>
+                  <input id="nome" name="nome" type="text" placeholder="Seu nome" autocomplete="name" />
+                </div>
+                <div class="field" style="margin-top: 12px;">
+                  <label for="empresa">Nome da empresa</label>
+                  <input id="empresa" name="empresa" type="text" placeholder="Nome da empresa" />
+                </div>
+                <div class="survey-actions">
+                  <button class="secondary-button" type="button" data-next>Continuar</button>
+                </div>
+              </div>
+
+              <div class="survey-step" data-step="1">
+                <h3>Qual é o segmento da empresa?</h3>
+                <div class="field">
+                  <label for="segmento">Segmento</label>
+                  <input id="segmento" name="segmento" type="text" placeholder="Ex.: clínica, loja, escritório..." />
+                </div>
+                <div class="survey-actions">
+                  <button class="ghost-button" type="button" data-back>Voltar</button>
+                  <button class="secondary-button" type="button" data-next>Continuar</button>
+                </div>
+              </div>
+
+              <div class="survey-step" data-step="2">
+                <h3>A empresa fica em Parauapebas?</h3>
+                <div class="choice-grid">
+                  <label class="choice">
+                    <input type="radio" name="local" value="Sim" checked />
+                    <span>Sim</span>
+                  </label>
+                  <label class="choice">
+                    <input type="radio" name="local" value="Não" />
+                    <span>Não</span>
+                  </label>
+                </div>
+                <div class="survey-actions">
+                  <button class="ghost-button" type="button" data-back>Voltar</button>
+                  <button class="secondary-button" type="button" data-next>Continuar</button>
+                </div>
+              </div>
+
+              <div class="survey-step" data-step="3">
+                <h3>Como estão os vídeos hoje?</h3>
+                <div class="choice-grid">
+                  <label class="choice">
+                    <input type="radio" name="status" value="Não posto" checked />
+                    <span>Não posto</span>
+                  </label>
+                  <label class="choice">
+                    <input type="radio" name="status" value="Posto às vezes" />
+                    <span>Posto às vezes</span>
+                  </label>
+                  <label class="choice">
+                    <input type="radio" name="status" value="Posto sempre, mas quero melhorar" />
+                    <span>Posto sempre, mas quero melhorar</span>
+                  </label>
+                </div>
+                <div class="survey-actions">
+                  <button class="ghost-button" type="button" data-back>Voltar</button>
+                  <button class="secondary-button" type="button" data-next>Continuar</button>
+                </div>
+              </div>
+
+              <div class="survey-step" data-step="4">
+                <h3>Quando quer começar?</h3>
+                <div class="choice-grid">
+                  <label class="choice">
+                    <input type="radio" name="inicio" value="Este mês" checked />
+                    <span>Este mês</span>
+                  </label>
+                  <label class="choice">
+                    <input type="radio" name="inicio" value="Próximo mês" />
+                    <span>Próximo mês</span>
+                  </label>
+                  <label class="choice">
+                    <input type="radio" name="inicio" value="Só pesquisando" />
+                    <span>Só pesquisando</span>
+                  </label>
+                </div>
+                <div class="survey-actions">
+                  <button class="ghost-button" type="button" data-back>Voltar</button>
+                  <button class="secondary-button" type="button" data-finish>Finalizar</button>
+                </div>
+              </div>
+
+              <div class="confirmation" id="confirmationBox" aria-live="polite">
+                <div id="respostaForaParauapebas" class="hidden">
+                  <span class="info-chip">Atendimento exclusivo em Parauapebas</span>
+                  <p>O atendimento da Lorhana é exclusivo para empresas de Parauapebas. Se quiser acompanhar o trabalho e ver mais conteúdo, você pode seguir no Instagram.</p>
+                </div>
+                <h3>Obrigado! Vamos conversar.</h3>
+                <p id="confirmationText">Seu perfil foi enviado para a Lorhana.</p>
+                <a class="cta-primary" id="whatsappButton" href="#" target="_blank" rel="noopener noreferrer">Falar com a Lorhana no WhatsApp</a>
+                <a class="cta-primary hidden" id="instagramButton" href="https://www.instagram.com/lorhanacastro/" target="_blank" rel="noopener noreferrer" style="margin-top: 12px;">Ver Instagram da Lorhana</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <section class="section" aria-labelledby="faq-title">
+          <h2 id="faq-title" class="section-title">Perguntas frequentes</h2>
+          <div class="faq-list">
+            <article class="faq-item">
+              <h3>Preciso aparecer nos vídeos?</h3>
+              <p>Não necessariamente. Eu posso ajudar com a direção do conteúdo, orientação diante da câmera e até o formato ideal para você aparecer com mais conforto.</p>
+            </article>
+            <article class="faq-item">
+              <h3>Quem publica os vídeos?</h3>
+              <p>Isso pode ser definido conforme o seu processo. Em geral, eu organizo a produção e a entrega do material pronto para publicação, e o processo final pode ser ajustado para o fluxo da sua empresa.</p>
+            </article>
+            <article class="faq-item">
+              <h3>Quantos vídeos por mês?</h3>
+              <p>O número de vídeos pode variar conforme o plano escolhido e a rotina da sua empresa. O foco é manter a presença constante e com qualidade, sem improviso.</p>
+            </article>
+            <article class="faq-item">
+              <h3>Tem contrato ou permanência?</h3>
+              <p>O modelo é pensado para parceria contínua, com planejamento mensal e comunicação clara sobre a rotina de produção. Tudo pode ser alinhado antes da contratação.</p>
+            </article>
+            <article class="faq-item">
+              <h3>É só vídeo de empresa ou também para Instagram?</h3>
+              <p>O foco é conteúdo para Instagram e presença digital da empresa, com planejamento e rotina mensal.</p>
+            </article>
+            <article class="faq-item">
+              <h3>Você faz edição e publicação?</h3>
+              <p>Sim. O serviço inclui planejamento, gravação, orientação, edição e organização da publicação para que o conteúdo fique pronto para ser usado com mais facilidade.</p>
+            </article>
+          </div>
+        </section>
+      </main>
+
+      <footer class="footer-meta">
+        <a class="cta-footer footer-cta" href="#qualificacao">Quero conhecer os planos</a>
+        <div style="padding-top: 10px;">
+          <a href="https://www.instagram.com/lorhanacastro/" target="_blank" rel="noopener noreferrer">Instagram</a>
+          <div style="margin-top: 8px;">Atendimento em Parauapebas – PA</div>
+        </div>
+      </footer>
+    </div>
+
+    <script>
+      const META_PIXEL_ID = "1474587454531658";
+      const WHATSAPP_NUMBER = "5594984114784";
+      const INSTAGRAM_URL = "https://www.instagram.com/lorhanacastro/";
+      const TRACKED_EVENTS = { pageView: false, viewContent: false, lead: false, contact: false };
+
+      const utmData = (() => {
+        const params = new URLSearchParams(window.location.search);
+        return Array.from(params.entries()).reduce((acc, [key, value]) => {
+          if (key.startsWith("utm_")) acc[key] = value;
+          return acc;
+        }, {});
+      })();
+
+      const getWhatsAppText = () => {
+        const name = document.getElementById("nome")?.value?.trim() || "[nome]";
+        const company = document.getElementById("empresa")?.value?.trim() || "[empresa]";
+        const segment = document.getElementById("segmento")?.value?.trim() || "[segmento]";
+        const local = document.querySelector('input[name="local"]:checked')?.value || "[local]";
+        const status = document.querySelector('input[name="status"]:checked')?.value || "[status]";
+        const inicio = document.querySelector('input[name="inicio"]:checked')?.value || "[quando]";
+
+        return [
+          "Olá, Lorhana!",
+          "",
+          "Ficha de qualificação:",
+          `Nome: ${name}`,
+          `Empresa: ${company}`,
+          `Segmento: ${segment}`,
+          `Parauapebas: ${local}`,
+          `Vídeos hoje: ${status}`,
+          `Quando quer começar: ${inicio}`,
+          "",
+          "Quero saber mais sobre os planos."
+        ].join("\n");
+      };
+
+      function injectMetaPixel() {
+        if (window.fbq) return;
+        window.fbq = function () {
+          if (typeof window.fbq.queue === "undefined") window.fbq.queue = [];
+          window.fbq.queue.push(arguments);
+        };
+        window.fbq.queue = [];
+        window.fbq.push = window.fbq;
+
+        const script = document.createElement("script");
+        script.async = true;
+        script.src = "https://connect.facebook.net/en_US/fbevents.js";
+        script.onload = function () {
+          if (typeof window.fbq === "function") {
+            window.fbq("init", META_PIXEL_ID);
+            window.fbq("track", "PageView");
+          }
+        };
+        document.head.appendChild(script);
+      }
+
+      function fireFbEvent(eventName) {
+        if (!window.fbq || typeof window.fbq !== "function") return;
+        if (TRACKED_EVENTS[eventName]) return;
+        TRACKED_EVENTS[eventName] = true;
+        window.fbq("track", eventName);
+      }
+
+      function updateProgress(currentStep) {
+        const totalSteps = 5;
+        const percent = ((currentStep + 1) / totalSteps) * 100;
+        const progressBar = document.getElementById("progressBar");
+        if (progressBar) progressBar.style.width = `${percent}%`;
+      }
+
+      const qualifyModal = document.getElementById("qualifyModal");
+      const surveySteps = Array.from(document.querySelectorAll(".survey-step"));
+      const nextButtons = document.querySelectorAll("[data-next]");
+      const backButtons = document.querySelectorAll("[data-back]");
+      const finishButton = document.querySelector("[data-finish]");
+      const confirmationBox = document.getElementById("confirmationBox");
+      const whatsappButton = document.getElementById("whatsappButton");
+      const instagramButton = document.getElementById("instagramButton");
+      const foraParauapebasBox = document.getElementById("respostaForaParauapebas");
+      const modalCloseButton = document.querySelector(".modal-close");
+      let currentStepIndex = 0;
+
+      function openQualifyModal() {
+        if (!qualifyModal) return;
+        qualifyModal.classList.add("visible");
+        qualifyModal.setAttribute("aria-hidden", "false");
+        document.body.classList.add("modal-open");
+        document.body.style.overflow = "hidden";
+        showStep(0);
+      }
+
+      function closeQualifyModal() {
+        if (!qualifyModal) return;
+        qualifyModal.classList.remove("visible");
+        qualifyModal.setAttribute("aria-hidden", "true");
+        document.body.classList.remove("modal-open");
+        document.body.style.overflow = "";
+      }
+
+      function showStep(index) {
+        currentStepIndex = index;
+        surveySteps.forEach((step, stepIndex) => {
+          step.classList.toggle("active", stepIndex === currentStepIndex);
+        });
+        updateProgress(currentStepIndex);
+      }
+
+      function buildWhatsAppLink() {
+        const baseMessage = getWhatsAppText();
+        const utmCampaign = utmData.utm_campaign || "";
+        const utmContent = utmData.utm_content || "";
+        const utmParts = [];
+        if (utmCampaign) utmParts.push(`utm_campaign=${utmCampaign}`);
+        if (utmContent) utmParts.push(`utm_content=${utmContent}`);
+
+        const fullMessage = utmParts.length ? `${baseMessage} Origem: ${utmParts.join(" | ")}.` : baseMessage;
+        return `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(fullMessage)}`;
+      }
+
+      function finalizeQuestionnaire() {
+        const localAnswer = document.querySelector('input[name="local"]:checked')?.value || "Não";
+        const name = document.getElementById("nome")?.value?.trim() || "[nome]";
+        const company = document.getElementById("empresa")?.value?.trim() || "[empresa]";
+
+        confirmationBox.classList.add("visible");
+        surveySteps.forEach((step) => step.classList.add("hidden"));
+
+        if (localAnswer === "Não") {
+          foraParauapebasBox.classList.remove("hidden");
+          instagramButton.classList.remove("hidden");
+          whatsappButton.classList.add("hidden");
+          confirmationBox.querySelector("#confirmationText").textContent = `Obrigado, ${name}. O atendimento da Lorhana é exclusivo para empresas de Parauapebas.`;
+          fireFbEvent("Lead");
+          return;
+        }
+
+        foraParauapebasBox.classList.add("hidden");
+        instagramButton.classList.add("hidden");
+        whatsappButton.classList.remove("hidden");
+        whatsappButton.href = buildWhatsAppLink();
+        confirmationBox.querySelector("#confirmationText").textContent = `Obrigado, ${name}. Sua empresa ${company} foi registrada para um atendimento mais direto com a Lorhana.`;
+        fireFbEvent("Lead");
+        whatsappButton.addEventListener(
+          "click",
+          function () {
+            fireFbEvent("Contact");
+          },
+          { once: true }
+        );
+      }
+
+      if (modalCloseButton) {
+        modalCloseButton.addEventListener("click", closeQualifyModal);
+      }
+
+      qualifyModal?.addEventListener("click", (event) => {
+        if (event.target === qualifyModal) {
+          closeQualifyModal();
+        }
+      });
+
+      nextButtons.forEach((button) => {
+        button.addEventListener("click", () => {
+          if (currentStepIndex < surveySteps.length - 1) {
+            showStep(currentStepIndex + 1);
+          }
+        });
+      });
+
+      backButtons.forEach((button) => {
+        button.addEventListener("click", () => {
+          if (currentStepIndex > 0) {
+            showStep(currentStepIndex - 1);
+          }
+        });
+      });
+
+      finishButton.addEventListener("click", finalizeQuestionnaire);
+
+      document.querySelectorAll(".demo-video").forEach((video) => {
+        const shell = video.closest(".video-shell");
+        const playCover = shell?.querySelector(".play-cover");
+        const loadVideo = () => {
+          if (!video.dataset.src) return;
+          if (!video.src) {
+            video.src = video.dataset.src;
+            video.load();
+          }
+          video.muted = true;
+          video.playsInline = true;
+          video.play().catch(() => {});
+          fireFbEvent("ViewContent");
+        };
+
+        if (playCover) {
+          playCover.addEventListener("click", loadVideo);
+        }
+        video.addEventListener("click", loadVideo);
+      });
+
+      const ctaButtons = document.querySelectorAll(".cta-primary, .cta-footer, .footer-cta");
+      ctaButtons.forEach((button) => {
+        button.addEventListener("click", function (event) {
+          event.preventDefault();
+          openQualifyModal();
+        });
+      });
+
+      const heroCta = document.querySelector(".hero .cta-primary");
+      const footerCta = document.querySelector(".footer-cta");
+      if (heroCta && footerCta && "IntersectionObserver" in window) {
+        const heroCtaObserver = new IntersectionObserver(([entry]) => {
+          footerCta.classList.toggle("is-visible", !entry.isIntersecting);
+        });
+        heroCtaObserver.observe(heroCta);
+      } else if (footerCta) {
+        footerCta.classList.add("is-visible");
+      }
+
+      injectMetaPixel();
+      fireFbEvent("PageView");
+      showStep(0);
+      closeQualifyModal();
+    </script>
+  </body>
+</html>

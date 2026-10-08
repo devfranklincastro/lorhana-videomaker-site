@@ -1,0 +1,6 @@
+node_modules/
+desktop-check.png
+mobile-check.png
+package.json
+package-lock.json
+.DS_Store
